@@ -1,3 +1,8 @@
+# 安装
+```
+pip3 install bilibili-storytree
+```
+
 # 实例
 查看`tests/test_story_graph.py` 其中有多个例子和注释
 
