@@ -7,7 +7,7 @@ def test_graph_1():
   # 建情节树：只有一个分支剧情模块
   root_video = {
     "index": 0,
-    "cid": 23456780,
+    "cid": 23456780, # 上传故事树时，使用真实的 cid
     "title": "start",
     "duration": 2
   }
@@ -26,14 +26,14 @@ def test_graph_2():
   # 建情节树: 建立一个非分支剧情模块，指向一个分支剧情模块 
   root_video = {
     "index": 0,
-    "cid": 23456780,
+    "cid": 23456780, # 上传故事树时，使用真实的 cid
     "title": "start",
     "duration": 2
   }
   
   goahead_video = {
     "index": 1,
-    "cid": 23456781,
+    "cid": 23456781, # 上传故事树时，使用真实的 cid
     "title": "go ahead",
     "duration": 1
   }
@@ -66,28 +66,28 @@ def test_graph_3():
   #           这个分支剧情模块有两个分支: 一个是分支剧情模块 n_right，一个是分支跳转模块 n_left，跳转到同等级的分支剧情模块 n_right。
   root_video = {
     "index": 0,
-    "cid": 23456780,
+    "cid": 23456780, # 上传故事树时，使用真实的 cid
     "title": "start",
     "duration": 2
   }
   
   goahead_video = {
     "index": 1,
-    "cid": 23456781,
+    "cid": 23456781, # 上传故事树时，使用真实的 cid
     "title": "go ahead",
     "duration": 1
   }
 
   right_video = {
     "index": 2,
-    "cid": 23456782,
+    "cid": 23456782, # 上传故事树时，使用真实的 cid
     "title": "go right",
     "duration": 2
   }
   
   left_video = {
     "index": 3,
-    "cid": 23456783,
+    "cid": 23456783, # 上传故事树时，使用真实的 cid
     "title": "go left",
     "duration": 1
   }

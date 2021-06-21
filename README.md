@@ -1,3 +1,6 @@
+# 实例
+查看`tests/test_story_graph.py` 其中有多个例子和注释
+
 # 背景知识 
 
 ### B 站制作交互视频的步骤：
@@ -29,7 +32,6 @@ data = {
   }
 }
 ```
-
 ### 解释 `data["graph"]["script"]["nodes"]` 
 * 参考 [B 站剧情树概念](https://www.bilibili.com/video/BV1n4411F7tm)
 
@@ -164,4 +166,5 @@ def _sync_vars(self):
 * 处理 `graph["script"]` 和画图描述一致，做两个节点(`ScriptNode`)，做个连线(`ScriptLink`), 设置变量(`ScriptVariable`)
 * 处理 `graph["nodes"]` 只需要同步 `graph["script"]` 就可以了, 同步接口会处理具体事情
 * 处理 `graph["regional_vars"]` 只需要同步 `graph["script"]` 就可以了，同步接口会处理具体事情
+
 
