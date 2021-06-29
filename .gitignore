@@ -2,3 +2,4 @@
 *.tsv
 dist
 __pycache__
+_exam_*
